@@ -1,0 +1,88 @@
+.loginbox {
+    text-align: center;
+    margin-bottom: 108px;
+}
+
+hr {
+    border: solid 1px;
+    border-bottom: none;
+    width: 20%;
+    margin: 30px auto 30px auto;
+}
+
+.username-box {
+    margin-bottom: 20px;
+}
+
+.password-box {
+    margin-bottom: 20px;
+}
+
+.signup-container {
+    background-color:#f1f1f1;
+    width: 15%;
+    margin: 20px auto 0 auto;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.signup-container a {
+    text-decoration: none;
+    color: #0047AB;
+}
+
+.signup-container a:hover {
+    opacity: 0.5;
+    text-decoration: underline;
+}
+
+input[type=text], input[type=password] {
+    width: 15%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #FFDA33;
+    color: black;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 10%;
+}
+  
+button:hover {
+    opacity: 0.8;
+}
+
+@media all and (min-width: 901px) {
+    input[type=text], input[type=password] {
+        width: 21%;
+    }
+
+    button {
+        width: 14%;
+    }
+    
+    .signup-container {
+        width: 14%;
+    }
+}
+
+@media all and (max-width: 900px) {
+    input[type=text], input[type=password] {
+        width: 50%;
+    }
+
+    button {
+        width: 33%;
+    }
+    
+    .signup-container {
+        width: 33%;
+    }
+}

@@ -1,0 +1,28 @@
+.loc-container {
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+
+.loc-container div {
+    background-color: black;
+    border-radius: 10px;
+    margin: 40px;
+}
+
+.loc-container img {
+    width: 526px;
+    height: 599px;
+    border-radius: 10px;
+}
+
+.loc-creater {
+    padding-top: 20px;
+    text-align: center;
+}
+
+button[name=loc-submit] {
+    margin: 20px 0;
+}

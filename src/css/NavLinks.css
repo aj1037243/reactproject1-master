@@ -1,0 +1,42 @@
+.nav-links {
+    list-style-type: none;
+    display: flex;
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+.nav-links li {
+    border-style: none solid none none;
+    border-color: white;
+    border-width: 2px;
+    margin: 0;
+    padding: 15px 10px;
+}
+
+.nav-links li:last-child {
+    border-style: none;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    padding: 15px 30px;
+    font-weight: bold;
+}
+
+.nav-links a:hover {
+    color: black;
+    background: white;
+}
+
+@media all and (max-width: 767px) {
+    .nav-links {
+      flex-direction: column;
+      text-align: center;
+      padding-inline-start: 0px;
+    }
+  
+    .nav-links li {
+      border-style: none;
+    }
+}

@@ -1,0 +1,19 @@
+.header {
+    width: 100%;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    padding: 20px 0;
+}
+
+@media (min-width: 900px) {
+    .header {
+      justify-content: space-between;
+    }
+}
+
+@media all and (max-width: 899px) {
+  .header {
+    flex-direction: column;
+  }
+}

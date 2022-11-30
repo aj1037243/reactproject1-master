@@ -1,0 +1,63 @@
+.signup-box {
+    text-align: center;
+    background-color:#f1f1f1;
+    width: 25%;
+    margin: 0 auto;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 75px;
+    margin-bottom: 75px;
+}
+
+hr {
+    border: solid 1px;
+    border-bottom: none;
+    width: 20%;
+    margin: 30px auto 30px auto;
+}
+
+input[name=usn-signup], input[name=psw-signup] {
+    width: 50%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+button[name=btn-signup] {
+    background-color: #FFDA33;
+    color: black;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 35%;
+}
+@media all and (max-width: 1500px) {
+    input[name=usn-signup], input[name=psw-signup] {
+        width: 50%;
+    }
+
+    button[name=btn-signup] {
+        width: 50%;
+    }
+    
+    .signup-box {
+        width: 40%;
+    }
+}
+
+@media all and (max-width: 900px) {
+    input[name=usn-signup], input[name=psw-signup] {
+        width: auto;
+    }
+
+    button[name=btn-signup] {
+        width: 50%;
+    }
+    
+    .signup-box {
+        width: 50%;
+    }
+}

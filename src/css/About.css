@@ -1,0 +1,9 @@
+.about-page {
+    text-align: center;
+    margin-bottom: 400px;
+}
+
+.about-page ul {
+    list-style-type: none;
+    padding-inline-start: 0px;
+}

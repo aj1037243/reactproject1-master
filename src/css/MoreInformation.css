@@ -1,0 +1,10 @@
+.moreinfo-page {
+    margin-bottom: 369px;
+    padding: 0 40px;
+}
+
+@media all and (max-width: 767px) {
+    .moreinfo-page {
+        text-align: center;
+    }
+}
