@@ -4,6 +4,7 @@ const Content = require("../models/contentModel");
 
 
 //Route Configuration between DB and frontend
+//Posting content from site to db
 router.route("/postContent").post((req, res) => {
     const title = req.body.title;
     const description = req.body.description;
@@ -18,7 +19,7 @@ router.route("/postContent").post((req, res) => {
     }) 
     newContent.save();
 });
-
+//Getting content from DB and inserting on
 router.route("/getContent").get((req, res) => {
      Content.find() 
         .then(foundContent => res.json(foundContent))

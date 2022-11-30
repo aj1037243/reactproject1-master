@@ -1,9 +1,8 @@
-import { useNavigate  } from 'react-router-dom'
+import { useHistory } from 'react-router'
 import { useEffect  } from 'react'
-import React from 'react'
 import '../css/SignUp.css'
 function Register() {
-    const history = useNavigate()
+    const history = useHistory()
 
     async function handleRegister(e) {
         e.preventDefault()
@@ -54,7 +53,6 @@ function Register() {
                         <input type="password" placeholder="Re-enter Password" name="psw-signup" required></input>
                     </div>
                     <button type="submit" name="btn-signup"><b>Sign Up!</b></button>
-
                 </form>
             </div>
         );

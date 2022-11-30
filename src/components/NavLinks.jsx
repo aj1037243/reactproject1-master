@@ -22,10 +22,6 @@ const NavLinks = props => {
                 <li>
                     <a href="/logout">Logout</a>
                 </li>
-                <li>
-                    <a href="/Register">Register</a>
-                </li>
-
             </ul>
         );
     } else {
@@ -45,9 +41,6 @@ const NavLinks = props => {
                 </li>
                 <li>
                     <a href="/login">Login</a>
-                </li>
-                <li>
-                    <a href="/Register">Register</a>
                 </li>
             </ul>
         );

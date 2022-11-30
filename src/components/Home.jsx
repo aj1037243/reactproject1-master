@@ -1,5 +1,6 @@
 import React from 'react';
 import '../css/Home.css';
+import DisplayUserContent from './DisplayUserContent';
 import UserInputContent from './UserInputContent';
 
 const Home = props => (
@@ -33,6 +34,7 @@ const Home = props => (
             </div>
         </div>
 <UserInputContent/>
+<DisplayUserContent/>
     </div>
 );
 

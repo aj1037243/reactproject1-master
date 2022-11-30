@@ -20,7 +20,7 @@ const Footer = props => {
                 <h5>Add Dynamically to our ever growing list</h5>
                 <h5>Athens is always there. But you have to look!</h5>
                 <div className="button">
-                    <a href="/signup">SIGN UP NOW!</a>
+                    <a href="/Register">SIGN UP NOW!</a>
                 </div>
             </footer>
         );

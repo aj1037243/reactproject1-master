@@ -1,21 +1,25 @@
-//user model to create a user.
-var express = require('express');
-var mongoose = require('mongoose');
-var Schema = mongoose.Schema;
+//FILENAME : User.js
 
-const { models } = require("mongoose");
+const mongoose = require("mongoose");
 
-var Schema = mongoose.Schema;
+const UserSchema = mongoose.Schema({
+  username: {
+    type: String,
+    required: true
+  },
+  email: {
+    type: String,
+    required: true
+  },
+  password: {
+    type: String,
+    required: true
+  },
+  createdAt: {
+    type: Date,
+    default: Date.now()
+  }
+});
 
-userSchema = new Schema( {
-
-    id: Number,
-    name: String,
-    username: String,
-    password: String,
-    passwordConf: String
-})
-
-User = mongoose.model('User', userSchema);
-
-module.exports = User;
+// export model user with UserSchema
+module.exports = mongoose.model("user", UserSchema);

@@ -1,19 +1,7 @@
 import React from 'react';
-import {useNavigate} from 'react-router-dom'
 import '../css/Login.css';
 
-
-const Login = props => {
-    
-
-    let history = useNavigate();
-
-    return(
-
-
-    
-
-
+const Login = props => (
     <div className='loginbox'>
         <h2>Login</h2>
         <hr></hr>
@@ -27,20 +15,14 @@ const Login = props => {
                 <label for="password"><b>Password</b></label>
                 <br></br>
                 <input type="password" placeholder="Enter Password" name="psw" required></input>
-
             </div>
-
-            <button type='submit'onClick= {() => {history.push("./")}}> Sign in</button>
-
+            <button type="submit"><b>Login</b></button>
 
             <div className='signup-container'>
                 <p>First-time user? <a href='/signup'>Create an account.</a></p>
             </div>
         </form>
     </div>
-
-     )
-
-};
+);
 
 export default Login;
